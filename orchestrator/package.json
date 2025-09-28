@@ -1,0 +1,15 @@
+{
+    "name": "urbanflow-orchestrator",
+    "version": "0.2.0",
+    "type": "module",
+    "dependencies": {
+        "@hashgraph/sdk": "^2.41.0",
+        "dotenv": "^16.4.5",
+        "pg": "^8.12.0",
+        "express": "^4.19.2"
+    },
+    "scripts": {
+        "start": "node src/index.js",
+        "create-topic": "node src/create_topic.js"
+    }
+}

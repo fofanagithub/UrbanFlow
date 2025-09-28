@@ -1,0 +1,24 @@
+{
+  "name": "urbanflow-hedera-agents",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "regulator": "node ./src/regulator.js",
+    "advisor": "node ./src/advisor.js",
+    "build": "node -e \"console.log('skip build')\"",
+    "dev:regulator": "node --watch ./src/regulator.js",
+    "dev:advisor": "node --watch ./src/advisor.js",
+    "create:topics": "node ./src/common/topics.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@hashgraph/sdk": "^2.73.2",
+    "@langchain/core": "^0.3.77",
+    "@langchain/ollama": "^0.2.4",
+    "dotenv": "^17.2.2",
+    "hedera-agent-kit": "^3.3.0",
+    "langchain": "^0.3.34",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.25.76"
+  }
+}
